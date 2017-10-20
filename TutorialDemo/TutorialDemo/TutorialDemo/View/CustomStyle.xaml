@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:TutorialDemo.View.Converters"
+             x:Class="TutorialDemo.View.CustomStyle">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+
+            <Style
+                x:Key="BigRedLabel"
+                TargetType="Label">
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="Center"/>
+                <Setter
+                    Property="VerticalOptions"
+                    Value="CenterAndExpand"/>
+                <Setter
+                    Property="FontSize"
+                    Value="Large"/>
+                <Setter
+                    Property="TextColor"
+                    Value="Red"/>
+            </Style>
+            <Style
+                x:Key="MediumGreenLabel"
+                TargetType="Label">
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="Center"/>
+                <Setter
+                    Property="VerticalOptions"
+                    Value="CenterAndExpand"/>
+                <Setter
+                    Property="FontSize"
+                    Value="Medium"/>
+                <Setter
+                    Property="TextColor"
+                    Value="Green"/>
+            </Style>
+            <Style
+                x:Key="SmallBlueLabel"
+                TargetType="Label">
+                <Setter
+                    Property="HorizontalOptions"
+                    Value="Center"/>
+                <Setter
+                    Property="VerticalOptions"
+                    Value="CenterAndExpand"/>
+                <Setter
+                    Property="FontSize"
+                    Value="Small"/>
+                <Setter
+                    Property="TextColor"
+                    Value="Blue"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <Label Text="BigRedLabel"
+                   Style="{StaticResource BigRedLabel}"/>
+            <Label Text="MediumGreenLabel"
+                   Style="{StaticResource MediumGreenLabel}"/>
+            <Label Text="SmallBlueLabel"
+                   Style="{StaticResource SmallBlueLabel}"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
